@@ -1,3 +1,4 @@
+import { GrainEffect } from '@/components/visualEffects/grain-effect';
 import { cn } from '@/libs/utils';
 import type { Metadata } from 'next';
 import { Bricolage_Grotesque, Oswald } from 'next/font/google';
@@ -47,7 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn(MainFont.className, SecondaryFont.variable, PixelFont.variable)}>{children}</body>
+      <body className={cn(MainFont.className, SecondaryFont.variable, PixelFont.variable)}>
+        <GrainEffect />
+        {children}</body>
     </html>
   );
 }

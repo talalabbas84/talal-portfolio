@@ -1,3 +1,4 @@
+import { Cursor } from '@/components/cursor/cursor';
 import { GrainEffect } from '@/components/visualEffects/grain-effect';
 import { cn } from '@/libs/utils';
 import type { Metadata } from 'next';
@@ -50,6 +51,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={cn(MainFont.className, SecondaryFont.variable, PixelFont.variable)}>
         <GrainEffect />
+        <Cursor color='white' />
         {children}</body>
     </html>
   );

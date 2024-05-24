@@ -1,5 +1,5 @@
-import { Cursor } from '@/components/cursor/cursor';
-import { GrainEffect } from '@/components/visualEffects/grain-effect';
+import  Cursor  from '@/components/cursor/cursor';
+import  GrainEffect  from '@/components/visualEffects/grain-effect';
 import { cn } from '@/libs/utils';
 import type { Metadata } from 'next';
 import { Bricolage_Grotesque, Oswald } from 'next/font/google';

@@ -1,11 +1,17 @@
-import { cn } from "../libs/utils";
+
+"use client";
+import WaterWaveWrapper from "@/components/visualEffects/water-wave-wrapper";
 
 export default function Page() {
   return (
-    <div>
-      <h1 className={cn('text-2xl', 'font-bold', 'text-center', 'font-pixel')}>
-        Hello, world!
-      </h1>
-    </div>
+    <WaterWaveWrapper
+      imageUrl=""
+      dropRadius="3"
+      perturbance="3"
+      resolution="2048"
+    >
+      {() => <div className="h-screen">dsdsddsds</div>}
+
+    </WaterWaveWrapper>
   );
 }

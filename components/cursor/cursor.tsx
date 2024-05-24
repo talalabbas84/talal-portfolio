@@ -6,7 +6,7 @@ interface CursorProps {
   color: string;
 }
 
-export const Cursor: React.FC<CursorProps> = ({ color  }) => {
+const Cursor: React.FC<CursorProps> = ({ color  }) => {
   return (
     <AnimatedCursor
       innerSize={8}
@@ -21,3 +21,5 @@ export const Cursor: React.FC<CursorProps> = ({ color  }) => {
 
   );
 };
+
+export default Cursor;

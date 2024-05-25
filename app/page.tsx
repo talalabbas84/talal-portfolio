@@ -1,6 +1,7 @@
 'use client';
 import Card from '@/components/ui/card';
 import FancyButton from '@/components/ui/fancy-button';
+import LiveClock from '@/components/ui/live-clock';
 import Profile from '@/components/ui/profile';
 import WaterWaveWrapper from '@/components/visualEffects/water-wave-wrapper';
 import { FaUser } from 'react-icons/fa';
@@ -24,7 +25,9 @@ export default function Page() {
             <Profile />
             <div className='w-[300px]'>
             <FancyButton text='Click me' icon={<FaUser />} />
+            
             </div>
+            <LiveClock timezone='Toronto/America' />
           </Card>
           </div>
         </div>
